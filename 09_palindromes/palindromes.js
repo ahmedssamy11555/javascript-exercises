@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (word) {
+
+    const normalWord = word.replace(/[^a-zA-Z0-9]/g, '').toLowerCase().split('')
+    return normalWord.join("") === normalWord.reverse().join("")
+
 
 };
 
